@@ -96,7 +96,8 @@ def get_sex(sex_upon_outcome: pd.Series) -> pd.Series:
     """
     if not isinstance(sex_upon_outcome, pd.Series):
         raise TypeError("Input must be a pandas Series")
-    
+    print("Testing somethig")
+
     sex = pd.Series("unknown", index=sex_upon_outcome.index)
 
     sex.loc[sex_upon_outcome.str.endswith("Female")] = "female"
