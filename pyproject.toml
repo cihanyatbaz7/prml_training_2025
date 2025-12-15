@@ -33,3 +33,13 @@ extend-select = [
   "N",  # PEP8 names
   "I"  # isort
 ]
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+     ".venv"
+     ]
